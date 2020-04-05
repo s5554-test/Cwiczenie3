@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Cwiczenie3.Models;
-using Cwiczenie3.Services;
+using Cwiczenie3.DAL;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cwiczenie3.Controllers
