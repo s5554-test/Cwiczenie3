@@ -15,9 +15,9 @@ namespace Cwiczenie3.DAL
         {
             _students = new List<Student>
             {
-                new Student { Id = 1, Lastname = "Potocki" },
-                new Student { Id = 2, Lastname = "Abacki" },
-                new Student { Id = 3, Lastname = "Kmicic" }
+                new Student { Id = 1, FirstName = "Robert", LastName = "Potocki" },
+                new Student { Id = 2, FirstName = "Kamil", LastName = "Abacki" },
+                new Student { Id = 3, FirstName = "Sebastian", LastName = "Kmicic" }
             };
             
         }
@@ -41,7 +41,9 @@ namespace Cwiczenie3.DAL
         public void Put(int id, Student student)
         {
             Student foundStudent = GetStudent(id);
-            foundStudent.Lastname = student.Lastname;
+            foundStudent.FirstName = student.FirstName;
+            foundStudent.LastName = student.LastName;
+            foundStudent.IndexNumber = student.IndexNumber;
         }
 
         public void AddStudent(Student student)
