@@ -12,6 +12,7 @@ namespace Cwiczenie3.DAL
 
         public Student GetStudent(int id);
         public void Put(int id, Student student);
+        public void AddStudent(Student student);
         public void Delete(int id);
 
     }

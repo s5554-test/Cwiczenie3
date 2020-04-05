@@ -43,5 +43,10 @@ namespace Cwiczenie3.DAL
             Student foundStudent = GetStudent(id);
             foundStudent.Lastname = student.Lastname;
         }
+
+        public void AddStudent(Student student)
+        {
+            _students.Add(student);
+        }
     }
 }
