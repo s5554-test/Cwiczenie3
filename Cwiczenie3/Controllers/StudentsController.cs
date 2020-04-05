@@ -40,10 +40,10 @@ namespace Cwiczenie3.Controllers
         }
 
         [HttpPost]
-
         public IActionResult CreateStudent(Student student)
         {
             student.IndexNumber = $"s{new Random().Next(1, 20000)}";
+            _dbService.AddStudent(student);
            
             return Ok(student);
         }
